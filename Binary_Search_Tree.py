@@ -15,7 +15,7 @@ class BinarySearchTree:
         if self.root is None:
             self.root = new_node
             return True
-        #To access the parent node (root) across the branches
+        #To access the parent node (root) across the branches. TO TRAVERSE THROUGH THE TREE
         temp = self.root
         #To iterate over the branches 
         while True:
@@ -34,8 +34,19 @@ class BinarySearchTree:
                     temp.right  = new_node
                     return True 
                 temp = temp.right     
-        
-        
+
+    def contains(self, value):
+        # Variable temp to iterate through the loop
+        temp = self.root
+        while temp is not None:
+            if value < temp.value:
+                temp = temp.left 
+            elif value > temp.value:
+                temp = temp.right 
+            else:
+                return True 
+        return False
+
 
 
 my_tree = BinarySearchTree()
@@ -47,7 +58,6 @@ print(my_tree.root.value)
 print(my_tree.root.left.value)
 print(my_tree.root.right.value)
 
-
-
-
+if my_tree.contains(3):
+    print("Success!")
  
