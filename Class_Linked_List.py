@@ -6,8 +6,6 @@ class Node:
         self.value = value
         self.next = None
 
-        
-
 class LinkedList:
     def __init__(self, value):
         new_node = Node(value)
@@ -101,6 +99,21 @@ class LinkedList:
         self.length +=1
         return True
 
+    def remove(self, index):
+        if index < 0 or index >= self.length:
+            return None
+        if index == 0:
+            return self.pop_first()
+        if index == self.length - 1:
+            return self.pop()
+        pre = self.get(index - 1)
+        temp = pre.next
+        pre.next = temp.next
+        temp.next = None
+        self.length -= 1
+        return temp
+     
+
 
 
 index = 2
@@ -114,6 +127,7 @@ my_linked_list.pop_first()
 print(f"\nValue at index {index}:", my_linked_list.get(index))
 my_linked_list.set_value(2, 11)
 my_linked_list.insert(1, 121)
+my_linked_list.remove(2)
 my_linked_list.print_list()
 
 
