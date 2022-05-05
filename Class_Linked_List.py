@@ -78,8 +78,17 @@ class LinkedList:
         temp = self.head
         for _ in range(index):
             temp = temp.next
-        return temp.value
+        return temp
 
+    def set_value(self, index, value):
+        temp = self.get(index)
+        if temp:
+            temp.value = value
+            return True
+        return False 
+
+
+index = 2
 
 my_linked_list = LinkedList(1)
 my_linked_list.append(2)
@@ -87,9 +96,8 @@ my_linked_list.append(3)
 my_linked_list.append(4)
 my_linked_list.prepend(0)
 my_linked_list.pop_first()
-index = 2
-print(f"\nValue at index {index}:", my_linked_list.get(index))
-
+#print(f"\nValue at index {index}:", my_linked_list.get(index))
+my_linked_list.set_value(2, 11)
 my_linked_list.print_list()
 
 
