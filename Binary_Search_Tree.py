@@ -67,6 +67,20 @@ class BinarySearchTree:
                 queue.append(current_node.right)
         return results 
 
+    def deepth_BS_pre_order(self):
+        results = []
+        
+        def traverse(current_node):
+            results.append(current_node.value)
+            if current_node.left is not None:
+                traverse(current_node.left)
+            if current_node.right is not None:
+                traverse(current_node.right)
+
+        traverse(self.root)
+        return results
+
+
 
 my_tree = BinarySearchTree()
 my_tree.insert(47)
@@ -84,5 +98,7 @@ print(my_tree.root.right.value)
 if my_tree.contains(47):
     print("Success!")
 
-print(my_tree.breadth_first_search())
+print(f'\nOutput using BFS: {my_tree.breadth_first_search()}')
+print(f'\nOutput using DFS: {my_tree.deepth_BS_pre_order()}')
+
  
