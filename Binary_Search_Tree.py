@@ -102,12 +102,8 @@ class BinarySearchTree:
 
 my_tree = BinarySearchTree()
 
-for i in range(8):
+for i in range(6):
     my_tree.insert(i)
-    
-#print(my_tree.root.value)
-#print(my_tree.root.left.value)
-#print(my_tree.root.right.value)
 
 if my_tree.contains(47):
     print("Success!")
