@@ -1,5 +1,7 @@
 from unittest import result
 
+from numpy import insert, integer
+
 
 class Node:
     def __init__(self, value):
@@ -102,7 +104,7 @@ class BinarySearchTree:
 
 my_tree = BinarySearchTree()
 
-for i in range(6):
+for i in range(7):
     my_tree.insert(i)
 
 if my_tree.contains(47):
@@ -110,5 +112,5 @@ if my_tree.contains(47):
 
 print(f'\nOutput using BFS: {my_tree.breadth_first_search()}')
 print(f'\nOutput using DFS pre_order: {my_tree.deepth_BS_pre_order()}')
-print(f'\nOutput using DFS post_order: {my_tree.deepth_BS_in_order()}')
 print(f'\nOutput using DFS in_order: {my_tree.deepth_BS_in_order()}')
+ 
