@@ -38,6 +38,18 @@ class DoublyLinkedList:
         self.length -= 1
         return temp
 
+    def prepend(self, value):
+        new_node = Node(value)
+        if self.length == 0: #length is zero
+            self.head = new_node
+            self.tail = new_node
+        else:
+            new_node.next = self.head
+            self.head.prev = new_node
+            self.head = new_node
+        self.length += 1
+        return True 
+
     def print_list(self): # Add the temp.value to check the value inside the nodes
         temp = self.head
         while temp is not None:
@@ -48,6 +60,8 @@ my_doubly_linked_list = DoublyLinkedList(7)
 my_doubly_linked_list.append(2)
 my_doubly_linked_list.pop()
 my_doubly_linked_list.pop()
+my_doubly_linked_list.pop()
+my_doubly_linked_list.prepend(12)
 my_doubly_linked_list.pop()
 
 my_doubly_linked_list.print_list()
