@@ -61,8 +61,6 @@ my_doubly_linked_list.append(2)
 my_doubly_linked_list.pop()
 my_doubly_linked_list.pop()
 my_doubly_linked_list.pop()
-my_doubly_linked_list.prepend(12321)
-my_doubly_linked_list.prepend(121)
 my_doubly_linked_list.prepend(12)
 my_doubly_linked_list.pop()
 
