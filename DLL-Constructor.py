@@ -77,6 +77,13 @@ class DoublyLinkedList:
                 temp = temp.prev
         return temp
 
+    def set_value(self, index, value):
+        temp =  self.get(index)
+        if temp:
+            temp.value = value
+            return True
+        return False
+
     def print_list(self): # Add the temp.value to check the value inside the nodes
         temp = self.head
         while temp is not None:
@@ -84,10 +91,10 @@ class DoublyLinkedList:
             temp = temp.next
 
 my_doubly_linked_list = DoublyLinkedList(0)
-my_doubly_linked_list.append(11)
-my_doubly_linked_list.append(21)
-my_doubly_linked_list.append(31)
-my_doubly_linked_list.get(0)
+my_doubly_linked_list.append(1)
+my_doubly_linked_list.append(2)
+my_doubly_linked_list.append(3)
+my_doubly_linked_list.set_value(0,4)
 
 my_doubly_linked_list.print_list()
 
