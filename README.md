@@ -3,4 +3,5 @@ Data structures implementation:
   Linked List
   Binary Trees 
   Double Linked List 
+  Stack
 </pre>
