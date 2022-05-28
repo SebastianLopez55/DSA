@@ -4,4 +4,5 @@ Data structures implementation:
   Binary Trees 
   Double Linked List 
   Stack
+  Queue
 </pre>
