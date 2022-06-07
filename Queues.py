@@ -19,6 +19,19 @@ class Queue:
             print(temp.value)
             temp = temp.next
 
-my_queue = Queue(4)
+    def en_queue(self, value):
+        new_node = Node(value)
+        if self.first is None:
+            self.first = new_node
+            self.last = new_node
+        else:
+           self.last.next = new_node
+           self.last = new_node
+        self.length += 1
+    
+
+my_queue = Queue(0)
+my_queue.en_queue(1)
+my_queue.en_queue(2)
 
 my_queue.print_queue()
