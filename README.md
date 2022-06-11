@@ -5,4 +5,6 @@ Data structures implementation:
   Double Linked List 
   Stack
   Queue
+  Hash Table
+
 </pre>
