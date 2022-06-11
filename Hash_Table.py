@@ -13,7 +13,7 @@ class HashTable: #Will built the list (Table)
         return my_hash
 
     def print_table(self):
-        for i, val in enumerate(self.data):
+        for i, val in enumerate(self.data_map):
             print(i, ": ", val)
     
 my_hash_table = HashTable()
