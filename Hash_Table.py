@@ -8,8 +8,11 @@ class HashTable: #Will built the list (Table)
 
     def __hash(self, key):
         my_hash = 0
-        for letter in key:
-            my_hash = (my_hash + ord(letter) * 23) % len(self.data_map)
+        for char in key:
+            # Mode to fin in the hash table
+            # Multiply by prime number 23 to reduce the chances of collisions?
+            my_hash = (my_hash + ord(char) * 23) % len(self.data_map) 
+            
         return my_hash
 
     def print_table(self):
