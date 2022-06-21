@@ -32,6 +32,16 @@ class HashTable: #Will built the list (Table)
                     return self.data_map[index][i][1]
         return None 
 
+
+    def keys(self):
+        all_keys = []
+        for i in range(len(self.data_map)):
+            if self.data_map[i] is not None:
+                for j in range(len(self.data_map[i])):
+                    all_keys.append(self.data[i][j][0])
+        return all_keys            
+
+
 my_hash_table = HashTable()
 
 my_hash_table.set_item('bolts', 1400)
