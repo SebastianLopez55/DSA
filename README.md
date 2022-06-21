@@ -6,5 +6,6 @@ Data structures implementation:
   Stack
   Queue
   Hash Table
+  Graphs
 
 </pre>
