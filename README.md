@@ -7,5 +7,4 @@ Data structures implementation:
   Queue
   Hash Table
   Graphs
-
 </pre>
