@@ -1,16 +1,14 @@
 
+#Not inplace 
+
 
 # Divide and conquer algorithm: divided the list into
 # two sub lists that are smaller 
 
-
 """ 
-
 Helpter function: combines two sorted lists into 
 one sorted list
-
 """
-
 def merge(list1, list2):
 
     combined = []
@@ -35,8 +33,28 @@ def merge(list1, list2):
 
     return combined
 
-
+#Testing merge(lst1, lst2)
 lst1 = [1,2,3]
 lst2 = [4,5,6]
-
 print(merge(lst1, lst2))
+
+
+#Function that breaks lists in half
+
+def mergeSort(myList):
+
+    if len(myList) == 1:
+        return myList
+    
+    mid_index = int(len(myList)/2)
+    left = mergeSort(myList[:mid_index])
+    right = mergeSort(myList[mid_index:])
+
+    return merge(left, right)
+
+
+
+#Test mergeSort
+lst = [3,1,4,2]
+
+print(mergeSort(lst))
