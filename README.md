@@ -10,8 +10,8 @@ Data structures implementation:
   7) Graphs
 
 Sorting Algorithms:
-1) Selection Sort
-2) Bubble Sort
-3) Merge Sort
-4) Quick Sort
+  1) Selection Sort
+  2) Bubble Sort
+  3) Merge Sort
+  4) Quick Sort
 </pre>
