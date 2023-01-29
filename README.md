@@ -1,6 +1,6 @@
 <pre>
 
-Data structures implementation:
+Data Structures Implementation:
   1) Linked List
   2) Double Linked List 
   3) Stack
