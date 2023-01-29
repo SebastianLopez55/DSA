@@ -10,6 +10,7 @@ Helpter function: combines two sorted lists into
 one sorted list
 """
 def merge(list1, list2):
+    #Time complexity: N
 
     combined = []
     i = 0
@@ -36,12 +37,13 @@ def merge(list1, list2):
 #Testing merge(lst1, lst2)
 lst1 = [1,2,3]
 lst2 = [4,5,6]
-print(merge(lst1, lst2))
+print("Merge: ", merge(lst1, lst2))
 
 
 #Function that breaks lists in half
 
 def mergeSort(myList):
+    #Tiem Complexity: logN
 
     if len(myList) == 1:
         return myList
@@ -57,4 +59,5 @@ def mergeSort(myList):
 #Test mergeSort
 lst = [3,1,4,2]
 
-print(mergeSort(lst))
+print("Megesort: ", mergeSort(lst))
+

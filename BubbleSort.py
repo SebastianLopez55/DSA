@@ -1,6 +1,8 @@
 
+#In place
 
-#Idea: Bubble up the largest item
+#Idea: Bubble up the largest item: swapping two values in a 
+#list if the preceding value is greater than the next one. 
 
 def bubble_sort(myList) :
     for i in range(len(myList) - 1, 0, -1):

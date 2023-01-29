@@ -1,4 +1,6 @@
 
+#Inplace
+
 # Finding the minimum value of the items being sorted, 
 # and then moving it to the start of the of the list.
 
