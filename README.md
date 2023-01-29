@@ -1,6 +1,6 @@
 <pre>
 
-Data structures implementation:
+Data Structures Implementation:
   1) Linked List
   2) Double Linked List 
   3) Stack
@@ -10,8 +10,8 @@ Data structures implementation:
   7) Graphs
 
 Sorting Algorithms:
-1) Selection Sort
-2) Bubble Sort
-3) Merge Sort
-4) Quick Sort
+  1) Selection Sort
+  2) Bubble Sort
+  3) Merge Sort
+  4) Quick Sort
 </pre>
